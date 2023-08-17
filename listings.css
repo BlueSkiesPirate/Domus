@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(40,47,75);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Home_Container{
+    border: 10px black solid;
+    width: 100%;
+    height: 90vh; /* Use viewport height units */
+    overflow: auto; /* Enable scrolling if content overflows */
+    background-color: rgb(127,229,212);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#Title{
+    border: 10px black solid;
+    height: 10vh;
+    width:30%;
+    text-align: center;
+    background-color: rgb(127,229,212);
+
+}
+
+.home{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.home:hover .img_box{
+    border-top: solid 10px teal;
+}
+
+.home:hover .button_container{
+    border-bottom: solid 5px teal;
+}
+
+.text_box{
+    height: 30px;
+    width: 100%;
+    padding-top: 3px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.img_box{
+    height: 20vh;
+    margin-top: 10%;
+    background-color: white;
+}
+
+.button_container{
+    display: flex;
+    height:30px;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+
+
+button{
+    width: 20%;
+    height: 3vh;
+    border:1px solid green;
+    background-color: white;
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    border:1px solid white;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#Desc_container{
+    border: 10px black solid;
+    width: 27.9%;
+    margin-left: 70%;
+    height: 99vh;
+    position: absolute;
+    background-color: antiquewhite;
+    display: none;
+    overflow-y: hidden;
+}
+
+
+
+
+
+
+@media (max-width: 568px){
+    #img_box{
+        width: 30%
+    }
+    #Home1{
+        width: 50%
+    }
+    #Home2{
+        width: 50%
+    }
+    #Home3{
+        display: none
+    }
+    #Home4{
+        display: none
+    }
+    #Title{
+        height: 22vh;
+        margin-left: 10%
+    }
+    button{
+        width: 25%;
+        height: 5vh;
+    }
+    #Desc_container{
+        margin-left: 0%;
+        width: 90%;
+        height: 98vh 
+    }
+}

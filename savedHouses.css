@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(40,47,75);
+}
+#welcome_message{
+    color: white;
+    border-radius: 25px;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(20,27,55);
+    border: 5px solid rgb(127,229,212);
+}
+
+h1{
+    color: white;
+}
+
+#saved_houses{
+    width: 100%;
+}
+
+#saved_house{
+    width:200px;
+    margin-left: 50px;
+}
+.text_box{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.img_box{
+    height: 20vh;
+    background-color: white;
+}
+
+h3{
+    font-size: 1rem;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+
+#saved_houses{
+}
+
+
+@media (max-width: 568px){
+    #saved_houses{
+
+        width: 70%;
+        font-size: xx-small;
+    }
+}
